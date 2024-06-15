@@ -1,7 +1,7 @@
 {
   "name": "proyecto_litografia",
   "version": "1.1.0",
-  "main": "index.js",
+  "main": "index.html",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Camcadena/proyecto_litografia.git"
