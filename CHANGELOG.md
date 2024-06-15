@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/Camcadena/proyecto_litografia/compare/v1.0.1...v1.1.0) (2024-06-15)
+
+
+### Features
+
+* Se agrega BOOTSTRAP e imagenes ([ae893ef](https://github.com/Camcadena/proyecto_litografia/commit/ae893ef0d3a6e4166aaa201d1e186b99136ff3da))
+
 ### 1.0.1 (2024-06-15)
 
 
