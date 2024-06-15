@@ -1,0 +1,146 @@
+<!------------------------------CLIENTE PERSONA---------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorado Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon/Logo Dorado.ico">
+</head>
+
+<body>
+
+<!------------------------------------NAV_BAR--------------------->
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="menuppal.html">
+                  <span class="visually-hidden">(current)</span><img src="assets/imagenes/LogoDorado.png" 
+                  style="height: 40px; width: auto;" alt="Logo Dorado">
+              </a>
+            </li>
+          </ul>
+
+          <form class="p-2">
+              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
+              <img src="assets/imagenes/Usuario.png" style="height: 40px; width: auto;" alt="Usuario"></a>
+          </form>
+
+          <form class="p-2">
+              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
+              <img src="assets/imagenes/Trabajo.png" style="height: 40px; width: auto;" alt="Trabajo"></a>
+          </form>
+
+          <form class="p-2">
+              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
+              <img src="assets/imagenes/Equipo.png" style="height: 40px; width: auto;" alt="Equipo"></a>
+          </form>
+
+          <form class="p-2">
+              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
+              <img src="assets/imagenes/Materiales.png" style="height: 40px; width: auto;" alt="Materiales"></a>
+          </form>
+
+          <form class="p-2">
+              <a  href="file:///D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/index.html">
+              <img src="assets/imagenes/Salir.png" style="height: 40px; width: auto;" alt="Salir"></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<!----------------------Formulario---------------------------------->
+
+    <div class=" container card primary d-grid col-6 mx-auto m-4">
+        <form class="pt-3 pb-3">
+            <div class="mb-3">
+              <label for="inputNombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputNombre">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputId" class="form-label">Identificacion o NIT</label>
+              <input type="number" class="form-control" id="inputId">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputEmpresa" class="form-label">Empresa</label>
+                <input type="text" class="form-control" id="inputEmpresa">
+              </div>
+
+            <div class="mb-3">
+                <label for="inputCorreo" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="inputCorreo">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputTelefono" class="form-label">Telefono</label>
+                <input type="number" class="form-control" id="inputTelefono">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputDireccion" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="inputDireccion">
+            </div>
+        </form>
+    </div>
+    
+
+
+
+
+
+
+<!---------------------------------------BOTONES-------------------------->
+
+    <div class="container-lg">
+        <div class="row justify-content-center">
+            <!--------------------BOTON CREAR CLIENTE CON VENTANA EMERGENTE----------->
+
+            <div class="col-12 col-md-2 p-2 m-2">              
+                <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
+                    data-bs-target="#exampleModal">Cargar Cliente</button>
+            </div>
+
+            <!---------CANCELAR ACCION------->
+
+            <div class="col-12 col-md-2 p-2 m-2">
+                <a href="D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/gestionar%20usuario.html"> 
+                <button class="btn btn-outline-info btn-lg" type="button">Cancelar</button></a>
+            </div>
+        </div>
+    </div>
+  
+  <!------------------ VENTANA EMERGENTE ----------------->
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Gestionar clientes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea cargar este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/editar%20cliente1.html">
+            <button type="button" class="btn btn-primary">Cargar</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
