@@ -1,0 +1,15 @@
+{
+  "name": "proyecto_litografia",
+  "version": "1.0.0",
+  "main": "index.html",
+  "repository": "https://github.com/Camcadena/proyecto_litografia.git",
+  "author": "Camcadena <camcadena@hotmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "release": "standard-version"
+  },
+  "devDependencies": {
+    "standard-version": "^9.5.0"
+  }
+}
