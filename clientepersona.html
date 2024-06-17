@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dorado Digital</title>
+    <title>Cliente Persona</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="assets/favicon/Logo Dorado.ico">
@@ -26,29 +26,24 @@
           </ul>
 
           <form class="p-2">
-              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
-              <img src="assets/imagenes/Usuario.png" style="height: 40px; width: auto;" alt="Usuario"></a>
-          </form>
+            <a  href="">
+            <img src="assets/imagenes/GestionarOrdenes.png" style="height: 50px; width: auto;" alt="Orden Trabajo"></a>
+        </form>
 
-          <form class="p-2">
-              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
-              <img src="assets/imagenes/Trabajo.png" style="height: 40px; width: auto;" alt="Trabajo"></a>
-          </form>
+        <form class="p-2">
+            <a  href="">
+            <img src="assets/imagenes/GestionarMateriales.png" style="height: 50px; width: auto;" alt="Gestionar Materiales"></a>
+        </form>
 
-          <form class="p-2">
-              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
-              <img src="assets/imagenes/Equipo.png" style="height: 40px; width: auto;" alt="Equipo"></a>
-          </form>
+        <form class="p-2">
+            <a  href="">
+            <img src="assets/imagenes/Equipo.png" style="height: 50px; width: auto;" alt="Equipo"></a>
+        </form>
 
-          <form class="p-2">
-              <a  href="/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/menuprincipal.html">
-              <img src="assets/imagenes/Materiales.png" style="height: 40px; width: auto;" alt="Materiales"></a>
-          </form>
-
-          <form class="p-2">
-              <a  href="file:///D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/index.html">
-              <img src="assets/imagenes/Salir.png" style="height: 40px; width: auto;" alt="Salir"></a>
-          </form>
+        <form class="p-2">
+            <a  href="">
+            <img src="assets/imagenes/Salir.png" style="height: 50px; width: auto;" alt="Salir"></a>
+        </form>
         </div>
       </div>
     </nav>
@@ -58,78 +53,114 @@
     <div class=" container card primary d-grid col-6 mx-auto m-4">
         <form class="pt-3 pb-3">
             <div class="mb-3">
-              <label for="inputNombre" class="form-label">Nombre</label>
+              <label for="inputNombre" class="form-label">Nombres</label>
               <input type="text" class="form-control" id="inputNombre">
             </div>
 
             <div class="mb-3">
-              <label for="inputId" class="form-label">Identificacion o NIT</label>
-              <input type="number" class="form-control" id="inputId">
+              <label for="inputApellido" class="form-label">Apellidos</label>
+              <input type="text" class="form-control" id="inputApellido">
             </div>
 
             <div class="mb-3">
-                <label for="inputEmpresa" class="form-label">Empresa</label>
-                <input type="text" class="form-control" id="inputEmpresa">
+                <label for="inputCedulaCiudadania" class="form-label">Cedula Ciudadania</label>
+                <input type="number" class="form-control" id="inputCedulaCiudadania">
               </div>
-
-            <div class="mb-3">
-                <label for="inputCorreo" class="form-label">Correo Electronico</label>
-                <input type="email" class="form-control" id="inputCorreo">
-            </div>
 
             <div class="mb-3">
                 <label for="inputTelefono" class="form-label">Telefono</label>
                 <input type="number" class="form-control" id="inputTelefono">
-            </div>
+            </div>           
 
             <div class="mb-3">
                 <label for="inputDireccion" class="form-label">Direccion</label>
                 <input type="text" class="form-control" id="inputDireccion">
             </div>
+
+            <div class="mb-3">
+              <label for="inputCiudad" class="form-label">Ciudad</label>
+              <input type="text" class="form-control" id="Ciudad">
+          </div>
         </form>
-    </div>
-    
 
+        <!-----------------BOTON Añadir Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#AnadirRegistro">Añadir Registro</button>
+        </div>
 
+        <!-----------------BOTON Cargar Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#CargarRegistro">Cargar Registro</button>
+        </div>
 
+        <!-----------------BOTON Eliminar Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#EliminarRegistro">Eliminar Registro</button>
+        </div>
 
-
-
-<!---------------------------------------BOTONES-------------------------->
-
-    <div class="container-lg">
-        <div class="row justify-content-center">
-            <!--------------------BOTON CREAR CLIENTE CON VENTANA EMERGENTE----------->
-
-            <div class="col-12 col-md-2 p-2 m-2">              
-                <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
-                    data-bs-target="#exampleModal">Cargar Cliente</button>
-            </div>
-
-            <!---------CANCELAR ACCION------->
-
-            <div class="col-12 col-md-2 p-2 m-2">
-                <a href="D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/gestionar%20usuario.html"> 
-                <button class="btn btn-outline-info btn-lg" type="button">Cancelar</button></a>
-            </div>
+        <!-----------------BOTON CANCELAR ACCION-------------------------->
+        <div class="d-grid gap-2">                  
+          <a href="clientes.html" class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true">Cancelar</a>
         </div>
     </div>
-  
-  <!------------------ VENTANA EMERGENTE ----------------->
-
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      
+  <!------------------VENTANA EMERGENTE Añadir Registro----------------->
+  <div class="modal fade" id="AnadirRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Gestionar clientes</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Añadir Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea añadir este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="clientepersona.html">
+            <button type="button" class="btn btn-primary">Añadir</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------VENTANA EMERGENTE Cargar Registro----------------->
+  <div class="modal fade" id="CargarRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cargar Registro</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
            Desea cargar este registro?
         </div>
         <div class="modal-footer">
-            <a href="D:/sena/Materias/1Analisis%20y%20desarrollo/Bootstrap/Proyecto/editar%20cliente1.html">
+            <a href="clientepersona.html">
             <button type="button" class="btn btn-primary">Cargar</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------VENTANA EMERGENTE Eliminar Registro----------------->
+  <div class="modal fade" id="EliminarRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea eliminar este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="clientepersona.html">
+            <button type="button" class="btn btn-primary">Eliminar</button></a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
       </div>
