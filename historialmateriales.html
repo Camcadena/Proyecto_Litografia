@@ -1,10 +1,10 @@
-<!------------------------------CLIENTE EMPRESA---------------------------------->
+<!------------------------------HISTORIAL MATERIALES---------------------------------->
 <!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cliente Empresa</title>
+    <title>Historial Materiales</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet" 
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="icon" href="assets/favicon/Logo Dorado.ico">
@@ -24,16 +24,21 @@
               </a>
             </li>
           </ul>
-          
-          <form class="p-2">
-              <a  href="ordentrabajo.html">
-              <img src="assets/imagenes/GestionarOrdenes.png" style="height: 50px; width: auto;" alt="Orden Trabajo"></a>
-          </form>
 
           <form class="p-2">
-              <a  href="">
-              <img src="assets/imagenes/Materiales.png" style="height: 50px; width: auto;" alt="Gestionar Materiales"></a>
+            <a  href="materiales.html">
+            <img src="assets/imagenes/Materiales.png" style="height: 50px; width: auto;" alt="Gestionar Materiales"></a>
+        </form>
+
+          <form class="p-2">
+              <a  href="clientes.html">
+              <img src="assets/imagenes/Clientes.png" style="height: 50px; width: auto;" alt="Clientes"></a>
           </form>
+          
+          <form class="p-2">
+            <a  href="ordentrabajo.html">
+            <img src="assets/imagenes/GestionarOrdenes.png" style="height: 50px; width: auto;" alt="Equipo"></a>
+        </form>
 
           <form class="p-2">
               <a  href="">
@@ -50,37 +55,42 @@
 
 <!----------------------Formulario---------------------------------->
 
-    <div class="container card primary d-grid col-6 mx-auto m-4">
+    <div class=" container card primary d-grid col-6 mx-auto m-4">
         <form class="pt-3 pb-3">
             <div class="mb-3">
-              <label for="inputIDEmpresa" class="form-label">ID Empresa</label>
-              <input type="number" class="form-control" id="inputIDEmpresa">
+              <label for="inputIDHistorial" class="form-label">ID Historial</label>
+              <input type="number" class="form-control" id="inputIDHistorial">
             </div>
 
             <div class="mb-3">
-              <label for="inputNombreEmpresa" class="form-label">Nombre Empresa</label>
-              <input type="text" class="form-control" id="inputNombreEmpresa">
+              <label for="inputMaterial" class="form-label">Material</label>
+              <input type="text" class="form-control" id="inputMaterial">
             </div>
 
             <div class="mb-3">
-              <label for="inputNIT" class="form-label">NIT</label>
-              <input type="number" class="form-control" id="inputNIT">
-            </div>
-
-            <div class="mb-3">
-                <label for="inputTelefono" class="form-label">Telefono</label>
-                <input type="text" class="form-control" id="inputTelefono">
+                <label for="inputIDProveedor" class="form-label">ID Proveedor</label>
+                <input type="number" class="form-control" id="inputIDProveedor">
               </div>
 
             <div class="mb-3">
-                <label for="inputDireccion" class="form-label">Direccion</label>
-                <input type="email" class="form-control" id="inputDireccion">
+                <label for="inputIDEmpleado" class="form-label">ID Empleado</label>
+                <input type="number" class="form-control" id="inputIDEmpleado">
             </div>
 
             <div class="mb-3">
-                <label for="inputCiudad" class="form-label">Ciudad</label>
-                <input type="number" class="form-control" id="inputCiudad">
+                <label for="inputCantidadRecibida" class="form-label">Cantidad Recibida</label>
+                <input type="number" class="form-control" id="inputCantidadRecibida">
             </div>
+
+            <div class="mb-3">
+                <label for="inputCantidadTotal" class="form-label">Cantidad Total</label>
+                <input type="number" class="form-control" id="inputCantidadTotal">
+              </div>
+  
+              <div class="mb-3">
+                <label for="inputFechaIngreso" class="form-label">Fecha Ingreso</label>
+                <input type="date" class="form-control" id="inputFechaIngreso">
+              </div>              
         </form>
         
         <!-----------------BOTON Añadir Registro-------------------------->
@@ -88,7 +98,7 @@
           <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" 
             data-bs-target="#AnadirRegistro">Añadir Registro</button>
         </div>
-        
+
         <!-----------------BOTON Cargar Registro-------------------------->
         <div class="d-grid gap-2">              
           <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
@@ -103,7 +113,7 @@
 
         <!-----------------BOTON CANCELAR ACCION-------------------------->
         <div class="d-grid gap-2">                  
-          <a href="clientes.html" class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true">Cancelar</a>
+          <a href="menuppal.html" class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true">Cancelar</a>
         </div>
     </div>
       
@@ -119,7 +129,7 @@
            Desea añadir este registro?
         </div>
         <div class="modal-footer">
-            <a href="clienteempresa.html">
+            <a href="menuppal.html">
             <button type="button" class="btn btn-primary">Añadir</button></a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
@@ -139,7 +149,7 @@
            Desea cargar este registro?
         </div>
         <div class="modal-footer">
-            <a href="clienteempresa.html">
+            <a href="menuppal.html">
             <button type="button" class="btn btn-primary">Cargar</button></a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
@@ -159,7 +169,7 @@
            Desea eliminar este registro?
         </div>
         <div class="modal-footer">
-            <a href="clienteempresa.html">
+            <a href="menuppal.html">
             <button type="button" class="btn btn-primary">Eliminar</button></a>
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
