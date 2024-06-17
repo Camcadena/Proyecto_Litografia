@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.3.0](https://github.com/Camcadena/proyecto_litografia/compare/v1.1.0...v1.3.0) (2024-06-17)
+
+
+### Features
+
+* Nuevas funciones imagenes empresa ([71b4c59](https://github.com/Camcadena/proyecto_litografia/commit/71b4c591c6a2edc217ce2e47203e61efc28ab015))
+* Nuevos Modulos ([01f30af](https://github.com/Camcadena/proyecto_litografia/commit/01f30af13a60976f81b33447a31805b6469a3019))
+
 ## [1.2.0](https://github.com/Camcadena/proyecto_litografia/compare/v1.1.0...v1.2.0) (2024-06-15)
 
 
