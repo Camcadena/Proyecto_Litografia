@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.5.0](https://github.com/Camcadena/proyecto_litografia/compare/v1.4.0...v1.5.0) (2024-06-17)
+
+
+### Features
+
+* Nuevos formularios ([183be7f](https://github.com/Camcadena/proyecto_litografia/commit/183be7fe503ba182a334b00bf378aef852da91eb))
+
 ## [1.4.0](https://github.com/Camcadena/proyecto_litografia/compare/v1.3.0...v1.4.0) (2024-06-17)
 
 
