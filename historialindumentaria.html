@@ -1,0 +1,192 @@
+<!------------------------------HISTORIAL INDUMENTARIA---------------------------------->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial Indumentaria</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="icon" href="assets/favicon/Logo Dorado.ico">
+</head>
+
+<body class="bg-primary">
+
+<!------------------------------------NAV_BAR--------------------->
+
+    <nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="menuppal.html">
+                  <span class="visually-hidden">(current)</span><img src="assets/imagenes/LogoDorado.png" 
+                  style="height: 50px; width: auto;" alt="Logo Dorado">
+              </a>
+            </li>
+          </ul>
+
+          <form class="p-2">
+            <a  href="indumentaria.html">
+            <img src="assets/imagenes/GestionarIndumentaria.png" style="height: 50px; width: auto;" alt="GestionarIndumentaria"></a>
+          </form>
+
+          <form class="p-2">
+            <a  href="materiales.html">
+            <img src="assets/imagenes/Materiales.png" style="height: 50px; width: auto;" alt="Gestionar Materiales"></a>
+        </form>
+
+            <form class="p-2">
+                <a  href="clientes.html">
+                <img src="assets/imagenes/Clientes.png" style="height: 50px; width: auto;" alt="Clientes"></a>
+            </form>
+          
+            <form class="p-2">
+                <a  href="ordentrabajo.html">
+                <img src="assets/imagenes/GestionarOrdenes.png" style="height: 50px; width: auto;" alt="Equipo"></a>
+            </form>
+
+          <form class="p-2">
+              <a  href="">
+              <img src="assets/imagenes/Equipo.png" style="height: 50px; width: auto;" alt="Equipo"></a>
+          </form>
+
+          <form class="p-2">
+              <a  href="">
+              <img src="assets/imagenes/Salir.png" style="height: 50px; width: auto;" alt="Salir"></a>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+<!----------------------Formulario---------------------------------->
+
+    <div class=" container card primary d-grid col-6 mx-auto m-4">
+        <form class="pt-3 pb-3">
+            <div class="mb-3">
+              <label for="inputIDHistorial" class="form-label">ID Historial</label>
+              <input type="number" class="form-control" id="inputIDHistorial">
+            </div>
+
+            <div class="mb-3">
+              <label for="inputIndumentaria" class="form-label">Indumentaria</label>
+              <input type="text" class="form-control" id="inputIndumentaria">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputIDProveedor" class="form-label">ID Proveedor</label>
+                <input type="number" class="form-control" id="inputIDProveedor">
+              </div>
+
+            <div class="mb-3">
+                <label for="inputIDEmpleado" class="form-label">ID Empleado</label>
+                <input type="number" class="form-control" id="inputIDEmpleado">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputCantidadRecibida" class="form-label">Cantidad Recibida</label>
+                <input type="number" class="form-control" id="inputCantidadRecibida">
+            </div>
+
+            <div class="mb-3">
+                <label for="inputCantidadTotal" class="form-label">Cantidad Total</label>
+                <input type="number" class="form-control" id="inputCantidadTotal">
+              </div>
+  
+              <div class="mb-3">
+                <label for="inputFechaIngreso" class="form-label">Fecha Ingreso</label>
+                <input type="date" class="form-control" id="inputFechaIngreso">
+              </div>              
+        </form>
+        
+        <!-----------------BOTON Añadir Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-primary btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#AnadirRegistro">Añadir Registro</button>
+        </div>
+
+        <!-----------------BOTON Cargar Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#CargarRegistro">Cargar Registro</button>
+        </div>
+
+        <!-----------------BOTON Eliminar Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-danger btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#EliminarRegistro">Eliminar Registro</button>
+        </div>
+
+        <!-----------------BOTON CANCELAR ACCION-------------------------->
+        <div class="d-grid gap-2">                  
+          <a href="menuppal.html" class="btn btn-outline-secondary btn-lg" role="button" aria-pressed="true">Cancelar</a>
+        </div>
+    </div>
+      
+  <!------------------VENTANA EMERGENTE Añadir Registro----------------->
+  <div class="modal fade" id="AnadirRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Añadir Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea añadir este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="menuppal.html">
+            <button type="button" class="btn btn-primary">Añadir</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------VENTANA EMERGENTE Cargar Registro----------------->
+  <div class="modal fade" id="CargarRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cargar Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea cargar este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="menuppal.html">
+            <button type="button" class="btn btn-primary">Cargar</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!------------------VENTANA EMERGENTE Eliminar Registro----------------->
+  <div class="modal fade" id="EliminarRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Eliminar Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+           Desea eliminar este registro?
+        </div>
+        <div class="modal-footer">
+            <a href="menuppal.html">
+            <button type="button" class="btn btn-primary">Eliminar</button></a>
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+
+</body>
+
+</html>
