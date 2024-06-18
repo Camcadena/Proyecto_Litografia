@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.5.3](https://github.com/Camcadena/proyecto_litografia/compare/v1.5.2...v1.5.3) (2024-06-18)
+
+
+### Bug Fixes
+
+* Boton actualizar y arreglo de otros ([d402415](https://github.com/Camcadena/proyecto_litografia/commit/d40241569c09492a23834298c35ae03858a7b6ac))
+
 ### [1.5.2](https://github.com/Camcadena/proyecto_litografia/compare/v1.5.1...v1.5.2) (2024-06-18)
 
 
