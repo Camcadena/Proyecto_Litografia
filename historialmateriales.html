@@ -101,8 +101,14 @@
 
         <!-----------------BOTON Cargar Registro-------------------------->
         <div class="d-grid gap-2">              
-          <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
+          <button type="button" class="btn btn-outline-secondary btn-lg" data-bs-toggle="modal" 
             data-bs-target="#CargarRegistro">Cargar Registro</button>
+        </div>
+
+        <!-----------------BOTON Actualizar Registro-------------------------->
+        <div class="d-grid gap-2">              
+          <button type="button" class="btn btn-outline-success btn-lg" data-bs-toggle="modal" 
+            data-bs-target="#ActualizarRegistro">Actualizar Registro</button>
         </div>
 
         <!-----------------BOTON Eliminar Registro-------------------------->
@@ -151,6 +157,26 @@
         <div class="modal-footer">
           <a href="menuppal.html">
           <button type="button" class="btn btn-primary">Cargar</button></a>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <!------------------VENTANA EMERGENTE Actualizar Registro----------------->
+   <div class="modal fade" id="ActualizarRegistro" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Actualizar Registro</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Desea actualizar este registro?
+        </div>
+        <div class="modal-footer">
+          <a href="menuppal.html">
+          <button type="button" class="btn btn-primary">Actualizar</button></a>
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
         </div>
       </div>
